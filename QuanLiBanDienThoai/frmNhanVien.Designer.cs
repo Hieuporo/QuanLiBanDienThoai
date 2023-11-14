@@ -36,15 +36,15 @@
 			this.btnXoa = new System.Windows.Forms.Button();
 			this.btnThem = new System.Windows.Forms.Button();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.mtbDienThoai = new System.Windows.Forms.MaskedTextBox();
+			this.chkGioiTinh = new System.Windows.Forms.CheckBox();
+			this.txtTenNhanVien = new System.Windows.Forms.TextBox();
+			this.txtMaNhanVien = new System.Windows.Forms.TextBox();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.txtMaNhanVien = new System.Windows.Forms.TextBox();
-			this.txtTenNhanVien = new System.Windows.Forms.TextBox();
-			this.chkGioiTinh = new System.Windows.Forms.CheckBox();
-			this.mtbDienThoai = new System.Windows.Forms.MaskedTextBox();
 			this.dgvNhanVien = new System.Windows.Forms.DataGridView();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
@@ -73,6 +73,7 @@
 			this.btnDong.TabIndex = 11;
 			this.btnDong.Text = "Đóng";
 			this.btnDong.UseVisualStyleBackColor = true;
+			this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
 			// 
 			// btnLuu
 			// 
@@ -82,6 +83,7 @@
 			this.btnLuu.TabIndex = 10;
 			this.btnLuu.Text = "Lưu";
 			this.btnLuu.UseVisualStyleBackColor = true;
+			this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
 			// 
 			// btnBoQua
 			// 
@@ -91,6 +93,7 @@
 			this.btnBoQua.TabIndex = 9;
 			this.btnBoQua.Text = "Bỏ qua";
 			this.btnBoQua.UseVisualStyleBackColor = true;
+			this.btnBoQua.Click += new System.EventHandler(this.btnBoQua_Click);
 			// 
 			// btnSua
 			// 
@@ -100,6 +103,7 @@
 			this.btnSua.TabIndex = 8;
 			this.btnSua.Text = "Sửa";
 			this.btnSua.UseVisualStyleBackColor = true;
+			this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
 			// 
 			// btnXoa
 			// 
@@ -109,6 +113,7 @@
 			this.btnXoa.TabIndex = 7;
 			this.btnXoa.Text = "Xóa";
 			this.btnXoa.UseVisualStyleBackColor = true;
+			this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
 			// 
 			// btnThem
 			// 
@@ -118,6 +123,7 @@
 			this.btnThem.TabIndex = 6;
 			this.btnThem.Text = "Thêm";
 			this.btnThem.UseVisualStyleBackColor = true;
+			this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
 			// 
 			// panel2
 			// 
@@ -135,6 +141,38 @@
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(1038, 155);
 			this.panel2.TabIndex = 1;
+			// 
+			// mtbDienThoai
+			// 
+			this.mtbDienThoai.Location = new System.Drawing.Point(608, 106);
+			this.mtbDienThoai.Mask = "(999) 000-0000";
+			this.mtbDienThoai.Name = "mtbDienThoai";
+			this.mtbDienThoai.Size = new System.Drawing.Size(218, 22);
+			this.mtbDienThoai.TabIndex = 10;
+			// 
+			// chkGioiTinh
+			// 
+			this.chkGioiTinh.AutoSize = true;
+			this.chkGioiTinh.Location = new System.Drawing.Point(187, 108);
+			this.chkGioiTinh.Name = "chkGioiTinh";
+			this.chkGioiTinh.Size = new System.Drawing.Size(58, 20);
+			this.chkGioiTinh.TabIndex = 9;
+			this.chkGioiTinh.Text = "Nam";
+			this.chkGioiTinh.UseVisualStyleBackColor = true;
+			// 
+			// txtTenNhanVien
+			// 
+			this.txtTenNhanVien.Location = new System.Drawing.Point(608, 64);
+			this.txtTenNhanVien.Name = "txtTenNhanVien";
+			this.txtTenNhanVien.Size = new System.Drawing.Size(218, 22);
+			this.txtTenNhanVien.TabIndex = 7;
+			// 
+			// txtMaNhanVien
+			// 
+			this.txtMaNhanVien.Location = new System.Drawing.Point(187, 64);
+			this.txtMaNhanVien.Name = "txtMaNhanVien";
+			this.txtMaNhanVien.Size = new System.Drawing.Size(205, 22);
+			this.txtMaNhanVien.TabIndex = 6;
 			// 
 			// label5
 			// 
@@ -184,38 +222,6 @@
 			this.label1.TabIndex = 1;
 			this.label1.Text = "DANH MỤC NHÂN VIÊN";
 			// 
-			// txtMaNhanVien
-			// 
-			this.txtMaNhanVien.Location = new System.Drawing.Point(187, 64);
-			this.txtMaNhanVien.Name = "txtMaNhanVien";
-			this.txtMaNhanVien.Size = new System.Drawing.Size(205, 22);
-			this.txtMaNhanVien.TabIndex = 6;
-			// 
-			// txtTenNhanVien
-			// 
-			this.txtTenNhanVien.Location = new System.Drawing.Point(608, 64);
-			this.txtTenNhanVien.Name = "txtTenNhanVien";
-			this.txtTenNhanVien.Size = new System.Drawing.Size(218, 22);
-			this.txtTenNhanVien.TabIndex = 7;
-			// 
-			// chkGioiTinh
-			// 
-			this.chkGioiTinh.AutoSize = true;
-			this.chkGioiTinh.Location = new System.Drawing.Point(187, 108);
-			this.chkGioiTinh.Name = "chkGioiTinh";
-			this.chkGioiTinh.Size = new System.Drawing.Size(58, 20);
-			this.chkGioiTinh.TabIndex = 9;
-			this.chkGioiTinh.Text = "Nam";
-			this.chkGioiTinh.UseVisualStyleBackColor = true;
-			// 
-			// mtbDienThoai
-			// 
-			this.mtbDienThoai.Location = new System.Drawing.Point(608, 106);
-			this.mtbDienThoai.Mask = "(999) 000-0000";
-			this.mtbDienThoai.Name = "mtbDienThoai";
-			this.mtbDienThoai.Size = new System.Drawing.Size(218, 22);
-			this.mtbDienThoai.TabIndex = 10;
-			// 
 			// dgvNhanVien
 			// 
 			this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -226,6 +232,7 @@
 			this.dgvNhanVien.RowTemplate.Height = 24;
 			this.dgvNhanVien.Size = new System.Drawing.Size(1038, 373);
 			this.dgvNhanVien.TabIndex = 2;
+			this.dgvNhanVien.Click += new System.EventHandler(this.dgvNhanVien_Click);
 			// 
 			// frmNhanVien
 			// 
@@ -237,6 +244,7 @@
 			this.Controls.Add(this.panel1);
 			this.Name = "frmNhanVien";
 			this.Text = "frmNhanVien";
+			this.Load += new System.EventHandler(this.frmNhanVien_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();

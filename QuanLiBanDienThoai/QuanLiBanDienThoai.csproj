@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ConnectData.cs" />
+    <Compile Include="Classes\Functions.cs" />
     <Compile Include="frmHang.cs">
       <SubType>Form</SubType>
     </Compile>

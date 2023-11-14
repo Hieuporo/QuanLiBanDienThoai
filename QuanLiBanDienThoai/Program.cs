@@ -16,7 +16,7 @@ namespace QuanLiBanDienThoai
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new frmHang());
+			Application.Run(new frmMain());
 		}
 	}
 }
