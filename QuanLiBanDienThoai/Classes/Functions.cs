@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace QuanLiBanDienThoai.Classes
 {
-	internal class Functions
+	public class Functions
 	{
 		public void FillComboBox(ComboBox comboName, DataTable data, string displayMember, string valueMember)
 		{
@@ -18,6 +18,14 @@ namespace QuanLiBanDienThoai.Classes
 			comboName.DisplayMember = displayMember;
 			comboName.ValueMember = valueMember;
 		}
+
+		public static string ConvertDateTime(string date)
+		{
+			string[] elements = date.Split('/');
+			string dt = string.Format("{0}/{1}/{2}", elements[0], elements[1], elements[2]);
+			return dt;
+		}
+
 
 		//Hàm tạo khóa có dạng: TientoNgaythangnam_giophutgiay
 		public static string CreateKey(string tiento)
