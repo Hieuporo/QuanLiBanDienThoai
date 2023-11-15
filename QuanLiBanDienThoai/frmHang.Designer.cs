@@ -137,16 +137,16 @@
 			// 
 			// txtTenThuongHieu
 			// 
-			this.txtTenThuongHieu.Location = new System.Drawing.Point(171, 107);
+			this.txtTenThuongHieu.Location = new System.Drawing.Point(184, 107);
 			this.txtTenThuongHieu.Name = "txtTenThuongHieu";
-			this.txtTenThuongHieu.Size = new System.Drawing.Size(265, 22);
+			this.txtTenThuongHieu.Size = new System.Drawing.Size(215, 22);
 			this.txtTenThuongHieu.TabIndex = 4;
 			// 
 			// txtMaThuongHieu
 			// 
-			this.txtMaThuongHieu.Location = new System.Drawing.Point(171, 72);
+			this.txtMaThuongHieu.Location = new System.Drawing.Point(184, 75);
 			this.txtMaThuongHieu.Name = "txtMaThuongHieu";
-			this.txtMaThuongHieu.Size = new System.Drawing.Size(265, 22);
+			this.txtMaThuongHieu.Size = new System.Drawing.Size(215, 22);
 			this.txtMaThuongHieu.TabIndex = 3;
 			// 
 			// label3

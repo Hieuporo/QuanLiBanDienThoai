@@ -53,6 +53,7 @@
 			// 
 			// panel2
 			// 
+			this.panel2.CausesValidation = false;
 			this.panel2.Controls.Add(this.txtTenKhach);
 			this.panel2.Controls.Add(this.label3);
 			this.panel2.Controls.Add(this.mtbDienThoai);
@@ -139,11 +140,11 @@
 			this.label1.BackColor = System.Drawing.SystemColors.Control;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-			this.label1.Location = new System.Drawing.Point(333, 9);
+			this.label1.Location = new System.Drawing.Point(404, 9);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(321, 29);
+			this.label1.Size = new System.Drawing.Size(235, 29);
 			this.label1.TabIndex = 1;
-			this.label1.Text = "DANH MỤC KHÁCH HÀNG";
+			this.label1.Text = "Quản lí khách hàng";
 			// 
 			// panel1
 			// 
@@ -240,7 +241,7 @@
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.panel2);
 			this.Name = "frmKhachHang";
-			this.Text = "frmKhachHang";
+			this.Text = "Quản lí khách hàng";
 			this.Load += new System.EventHandler(this.frmKhachHang_Load);
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();

@@ -243,7 +243,7 @@
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
 			this.Name = "frmNhanVien";
-			this.Text = "frmNhanVien";
+			this.Text = "Quản lí nhân viên";
 			this.Load += new System.EventHandler(this.frmNhanVien_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);

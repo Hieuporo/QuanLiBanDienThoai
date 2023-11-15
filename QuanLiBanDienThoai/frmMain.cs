@@ -54,5 +54,10 @@ namespace QuanLiBanDienThoai
 			frm.MdiParent = this;
 			frm.Show();
 		}
+
+		private void frmMain_Load(object sender, EventArgs e)
+		{
+			pictureBox1.Image = Image.FromFile("Images\\AnhNen.gif");
+		}
 	}
 }

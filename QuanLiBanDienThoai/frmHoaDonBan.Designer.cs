@@ -53,8 +53,8 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.txtThanhTien = new System.Windows.Forms.Label();
+			this.txtThanhTien = new System.Windows.Forms.TextBox();
+			this.labdsa = new System.Windows.Forms.Label();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.btnDong = new System.Windows.Forms.Button();
 			this.btnInHoaDon = new System.Windows.Forms.Button();
@@ -109,6 +109,7 @@
 			this.cboMaHDBan.Name = "cboMaHDBan";
 			this.cboMaHDBan.Size = new System.Drawing.Size(289, 24);
 			this.cboMaHDBan.TabIndex = 1;
+			this.cboMaHDBan.DropDown += new System.EventHandler(this.cboMaHDBan_DropDown);
 			// 
 			// label1
 			// 
@@ -162,6 +163,7 @@
 			this.cboMaKhach.Name = "cboMaKhach";
 			this.cboMaKhach.Size = new System.Drawing.Size(218, 24);
 			this.cboMaKhach.TabIndex = 19;
+			this.cboMaKhach.SelectedIndexChanged += new System.EventHandler(this.cboMaKhach_SelectedIndexChanged);
 			this.cboMaKhach.TextChanged += new System.EventHandler(this.cboMaKhach_TextChanged);
 			// 
 			// txtTenKhach
@@ -312,8 +314,8 @@
 			// 
 			// groupBox2
 			// 
-			this.groupBox2.Controls.Add(this.textBox1);
 			this.groupBox2.Controls.Add(this.txtThanhTien);
+			this.groupBox2.Controls.Add(this.labdsa);
 			this.groupBox2.Controls.Add(this.panel4);
 			this.groupBox2.Controls.Add(this.dgvHDBanHang);
 			this.groupBox2.Controls.Add(this.txtDonGiaBan);
@@ -332,22 +334,22 @@
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Thông tin các sản phẩm";
 			// 
-			// textBox1
-			// 
-			this.textBox1.Location = new System.Drawing.Point(503, 77);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(187, 22);
-			this.textBox1.TabIndex = 25;
-			// 
 			// txtThanhTien
 			// 
-			this.txtThanhTien.AutoSize = true;
-			this.txtThanhTien.Location = new System.Drawing.Point(397, 77);
+			this.txtThanhTien.Location = new System.Drawing.Point(503, 77);
 			this.txtThanhTien.Name = "txtThanhTien";
-			this.txtThanhTien.Size = new System.Drawing.Size(39, 16);
-			this.txtThanhTien.TabIndex = 24;
-			this.txtThanhTien.Text = "Tổng";
-			this.txtThanhTien.Enter += new System.EventHandler(this.t);
+			this.txtThanhTien.Size = new System.Drawing.Size(187, 22);
+			this.txtThanhTien.TabIndex = 25;
+			// 
+			// labdsa
+			// 
+			this.labdsa.AutoSize = true;
+			this.labdsa.Location = new System.Drawing.Point(397, 77);
+			this.labdsa.Name = "labdsa";
+			this.labdsa.Size = new System.Drawing.Size(39, 16);
+			this.labdsa.TabIndex = 24;
+			this.labdsa.Text = "Tổng";
+			this.labdsa.Enter += new System.EventHandler(this.t);
 			// 
 			// panel4
 			// 
@@ -465,6 +467,7 @@
 			this.txtSoLuong.Size = new System.Drawing.Size(190, 22);
 			this.txtSoLuong.TabIndex = 19;
 			this.txtSoLuong.TextChanged += new System.EventHandler(this.txtSoLuong_TextChanged);
+			this.txtSoLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuong_KeyPress);
 			// 
 			// cboMaHang
 			// 
@@ -473,6 +476,7 @@
 			this.cboMaHang.Name = "cboMaHang";
 			this.cboMaHang.Size = new System.Drawing.Size(208, 24);
 			this.cboMaHang.TabIndex = 18;
+			this.cboMaHang.SelectedIndexChanged += new System.EventHandler(this.cboMaHang_SelectedIndexChanged);
 			this.cboMaHang.TextChanged += new System.EventHandler(this.cboMaHang_TextChanged);
 			// 
 			// txtTenHang
@@ -518,7 +522,8 @@
 			this.Controls.Add(this.panel3);
 			this.Controls.Add(this.panel1);
 			this.Name = "frmHoaDonBan";
-			this.Text = "frmHoaDonBan";
+			this.Text = "Hóa đơn bán hàng";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmHoaDonBan_FormClosing);
 			this.Load += new System.EventHandler(this.frmHoaDonBan_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
@@ -580,7 +585,7 @@
 		private System.Windows.Forms.Button btnThem;
 		private System.Windows.Forms.ComboBox cboMaKhach;
 		private System.Windows.Forms.DataGridView dgvHDBanHang;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.Label txtThanhTien;
+		private System.Windows.Forms.TextBox txtThanhTien;
+		private System.Windows.Forms.Label labdsa;
 	}
 }

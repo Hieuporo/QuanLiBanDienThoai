@@ -205,7 +205,7 @@
 			this.label1.BackColor = System.Drawing.SystemColors.Control;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-			this.label1.Location = new System.Drawing.Point(333, 9);
+			this.label1.Location = new System.Drawing.Point(419, 9);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(286, 29);
 			this.label1.TabIndex = 1;
@@ -317,7 +317,7 @@
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.panel2);
 			this.Name = "frmSanPham";
-			this.Text = "frmSanPham";
+			this.Text = "Quản lí sản phẩm";
 			this.Load += new System.EventHandler(this.frmSanPham_Load);
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
