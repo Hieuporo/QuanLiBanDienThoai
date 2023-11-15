@@ -169,6 +169,7 @@
     <Content Include="bin\Debug\Images\AnhNen.gif" />
     <Content Include="bin\Debug\QuanLiBanDienThoai.exe" />
     <Content Include="bin\Debug\QuanLiBanDienThoai.pdb" />
+    <Content Include="QLDienThoai.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
