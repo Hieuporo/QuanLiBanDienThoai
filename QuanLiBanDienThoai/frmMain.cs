@@ -22,37 +22,33 @@ namespace QuanLiBanDienThoai
 
 		private void mnuHang_Click(object sender, EventArgs e)
 		{
-			frmHang frm = new frmHang();
-			frm.MdiParent = this;
-			frm.Show();
+			frmHang frmH = new frmHang();
+			frmH.ShowDialog();
 		}
 
 		private void mnuNhanVien_Click(object sender, EventArgs e)
 		{
-			frmNhanVien frm = new frmNhanVien();
-			frm.MdiParent = this;
-			frm.Show();
+			frmNhanVien frmH = new frmNhanVien();
+			frmH.ShowDialog();
+			
 		}
 
 		private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			frmKhachHang frm = new frmKhachHang();
-			frm.MdiParent = this;
-			frm.Show();
+			frmKhachHang frmH = new frmKhachHang();
+			frmH.ShowDialog();
 		}
 
 		private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			frmSanPham frm = new frmSanPham();
-			frm.MdiParent = this;
-			frm.Show();
+			frmSanPham frmH = new frmSanPham();
+			frmH.ShowDialog();
 		}
 
 		private void mnuHoaDon_Click(object sender, EventArgs e)
 		{
-			frmHoaDonBan frm = new frmHoaDonBan();
-			frm.MdiParent = this;
-			frm.Show();
+			frmHoaDonBan frmH = new frmHoaDonBan();
+			frmH.ShowDialog();
 		}
 
 		private void frmMain_Load(object sender, EventArgs e)
