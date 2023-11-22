@@ -484,5 +484,10 @@ namespace QuanLiBanDienThoai
 		{
 
 		}
+
+		private void dgvHDBanHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
 	}
 }

@@ -53,6 +53,7 @@
 			// 
 			// panel1
 			// 
+			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.panel1.Controls.Add(this.btnDong);
 			this.panel1.Controls.Add(this.btnLuu);
 			this.panel1.Controls.Add(this.btnBoQua);
@@ -71,7 +72,7 @@
 			this.btnDong.Name = "btnDong";
 			this.btnDong.Size = new System.Drawing.Size(101, 39);
 			this.btnDong.TabIndex = 11;
-			this.btnDong.Text = "Đóng";
+			this.btnDong.Text = "Thoát";
 			this.btnDong.UseVisualStyleBackColor = true;
 			this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
 			// 
@@ -127,6 +128,7 @@
 			// 
 			// panel2
 			// 
+			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.panel2.Controls.Add(this.mtbDienThoai);
 			this.panel2.Controls.Add(this.chkGioiTinh);
 			this.panel2.Controls.Add(this.txtTenNhanVien);
@@ -213,10 +215,10 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.BackColor = System.Drawing.SystemColors.Control;
+			this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-			this.label1.Location = new System.Drawing.Point(333, 9);
+			this.label1.Location = new System.Drawing.Point(367, 9);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(293, 29);
 			this.label1.TabIndex = 1;
@@ -224,6 +226,7 @@
 			// 
 			// dgvNhanVien
 			// 
+			this.dgvNhanVien.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
 			this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dgvNhanVien.Location = new System.Drawing.Point(0, 155);

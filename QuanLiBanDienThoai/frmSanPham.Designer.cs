@@ -45,7 +45,6 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.button1 = new System.Windows.Forms.Button();
 			this.btnDong = new System.Windows.Forms.Button();
 			this.btnLuu = new System.Windows.Forms.Button();
 			this.btnBoQua = new System.Windows.Forms.Button();
@@ -61,6 +60,7 @@
 			// 
 			// panel2
 			// 
+			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.panel2.Controls.Add(this.cboMaNhanHieu);
 			this.panel2.Controls.Add(this.label5);
 			this.panel2.Controls.Add(this.btnOpen);
@@ -101,7 +101,7 @@
 			// 
 			// btnOpen
 			// 
-			this.btnOpen.Location = new System.Drawing.Point(810, 64);
+			this.btnOpen.Location = new System.Drawing.Point(579, 57);
 			this.btnOpen.Name = "btnOpen";
 			this.btnOpen.Size = new System.Drawing.Size(60, 31);
 			this.btnOpen.TabIndex = 18;
@@ -111,9 +111,9 @@
 			// 
 			// picAnh
 			// 
-			this.picAnh.Location = new System.Drawing.Point(903, 48);
+			this.picAnh.Location = new System.Drawing.Point(785, 28);
 			this.picAnh.Name = "picAnh";
-			this.picAnh.Size = new System.Drawing.Size(158, 145);
+			this.picAnh.Size = new System.Drawing.Size(180, 175);
 			this.picAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.picAnh.TabIndex = 17;
 			this.picAnh.TabStop = false;
@@ -168,7 +168,7 @@
 			// 
 			// txtAnh
 			// 
-			this.txtAnh.Location = new System.Drawing.Point(563, 61);
+			this.txtAnh.Location = new System.Drawing.Point(499, 110);
 			this.txtAnh.Multiline = true;
 			this.txtAnh.Name = "txtAnh";
 			this.txtAnh.Size = new System.Drawing.Size(220, 63);
@@ -184,7 +184,7 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(496, 67);
+			this.label4.Location = new System.Drawing.Point(505, 64);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(30, 16);
 			this.label4.TabIndex = 4;
@@ -202,7 +202,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.BackColor = System.Drawing.SystemColors.Control;
+			this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
 			this.label1.Location = new System.Drawing.Point(419, 9);
@@ -213,7 +213,7 @@
 			// 
 			// panel1
 			// 
-			this.panel1.Controls.Add(this.button1);
+			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.panel1.Controls.Add(this.btnDong);
 			this.panel1.Controls.Add(this.btnLuu);
 			this.panel1.Controls.Add(this.btnBoQua);
@@ -226,29 +226,19 @@
 			this.panel1.Size = new System.Drawing.Size(1130, 100);
 			this.panel1.TabIndex = 4;
 			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(739, 31);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(101, 39);
-			this.button1.TabIndex = 12;
-			this.button1.Text = "Hiển thị  DS";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
-			// 
 			// btnDong
 			// 
-			this.btnDong.Location = new System.Drawing.Point(874, 31);
+			this.btnDong.Location = new System.Drawing.Point(955, 31);
 			this.btnDong.Name = "btnDong";
 			this.btnDong.Size = new System.Drawing.Size(101, 39);
 			this.btnDong.TabIndex = 11;
-			this.btnDong.Text = "Đóng";
+			this.btnDong.Text = "Thoát";
 			this.btnDong.UseVisualStyleBackColor = true;
 			this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
 			// 
 			// btnLuu
 			// 
-			this.btnLuu.Location = new System.Drawing.Point(469, 31);
+			this.btnLuu.Location = new System.Drawing.Point(618, 31);
 			this.btnLuu.Name = "btnLuu";
 			this.btnLuu.Size = new System.Drawing.Size(101, 39);
 			this.btnLuu.TabIndex = 10;
@@ -258,7 +248,7 @@
 			// 
 			// btnBoQua
 			// 
-			this.btnBoQua.Location = new System.Drawing.Point(604, 31);
+			this.btnBoQua.Location = new System.Drawing.Point(785, 31);
 			this.btnBoQua.Name = "btnBoQua";
 			this.btnBoQua.Size = new System.Drawing.Size(101, 39);
 			this.btnBoQua.TabIndex = 9;
@@ -268,7 +258,7 @@
 			// 
 			// btnSua
 			// 
-			this.btnSua.Location = new System.Drawing.Point(334, 31);
+			this.btnSua.Location = new System.Drawing.Point(255, 31);
 			this.btnSua.Name = "btnSua";
 			this.btnSua.Size = new System.Drawing.Size(101, 39);
 			this.btnSua.TabIndex = 8;
@@ -278,7 +268,7 @@
 			// 
 			// btnXoa
 			// 
-			this.btnXoa.Location = new System.Drawing.Point(199, 31);
+			this.btnXoa.Location = new System.Drawing.Point(443, 31);
 			this.btnXoa.Name = "btnXoa";
 			this.btnXoa.Size = new System.Drawing.Size(101, 39);
 			this.btnXoa.TabIndex = 7;
@@ -298,6 +288,7 @@
 			// 
 			// dgvSanPham
 			// 
+			this.dgvSanPham.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
 			this.dgvSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dgvSanPham.Location = new System.Drawing.Point(0, 229);
@@ -352,7 +343,6 @@
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Button btnOpen;
 		private System.Windows.Forms.PictureBox picAnh;
-		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.ComboBox cboMaNhanHieu;
 		private System.Windows.Forms.Label label5;
 	}

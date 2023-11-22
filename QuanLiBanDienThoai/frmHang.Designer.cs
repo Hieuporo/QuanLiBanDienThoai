@@ -40,7 +40,6 @@
 			this.txtMaThuongHieu = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
 			this.dgvHang = new System.Windows.Forms.DataGridView();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
@@ -49,6 +48,7 @@
 			// 
 			// panel1
 			// 
+			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.panel1.Controls.Add(this.btnDong);
 			this.panel1.Controls.Add(this.btnLuu);
 			this.panel1.Controls.Add(this.btnBoQua);
@@ -123,11 +123,11 @@
 			// 
 			// panel2
 			// 
+			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.panel2.Controls.Add(this.txtTenThuongHieu);
 			this.panel2.Controls.Add(this.txtMaThuongHieu);
 			this.panel2.Controls.Add(this.label3);
 			this.panel2.Controls.Add(this.label2);
-			this.panel2.Controls.Add(this.label1);
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel2.ForeColor = System.Drawing.SystemColors.Highlight;
 			this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -137,14 +137,14 @@
 			// 
 			// txtTenThuongHieu
 			// 
-			this.txtTenThuongHieu.Location = new System.Drawing.Point(184, 107);
+			this.txtTenThuongHieu.Location = new System.Drawing.Point(184, 91);
 			this.txtTenThuongHieu.Name = "txtTenThuongHieu";
 			this.txtTenThuongHieu.Size = new System.Drawing.Size(215, 22);
 			this.txtTenThuongHieu.TabIndex = 4;
 			// 
 			// txtMaThuongHieu
 			// 
-			this.txtMaThuongHieu.Location = new System.Drawing.Point(184, 75);
+			this.txtMaThuongHieu.Location = new System.Drawing.Point(184, 51);
 			this.txtMaThuongHieu.Name = "txtMaThuongHieu";
 			this.txtMaThuongHieu.Size = new System.Drawing.Size(215, 22);
 			this.txtMaThuongHieu.TabIndex = 3;
@@ -153,7 +153,7 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.label3.Location = new System.Drawing.Point(35, 107);
+			this.label3.Location = new System.Drawing.Point(40, 91);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(102, 16);
 			this.label3.TabIndex = 2;
@@ -163,25 +163,15 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.label2.Location = new System.Drawing.Point(35, 75);
+			this.label2.Location = new System.Drawing.Point(40, 51);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(97, 16);
 			this.label2.TabIndex = 1;
 			this.label2.Text = "Mã thương hiệu";
 			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(331, 9);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(333, 29);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "DANH MỤC THƯƠNG HIỆU";
-			this.label1.Click += new System.EventHandler(this.label1_Click);
-			// 
 			// dgvHang
 			// 
+			this.dgvHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
 			this.dgvHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvHang.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dgvHang.Location = new System.Drawing.Point(0, 148);
@@ -218,7 +208,6 @@
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.DataGridView dgvHang;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtTenThuongHieu;
 		private System.Windows.Forms.TextBox txtMaThuongHieu;
 		private System.Windows.Forms.Label label3;

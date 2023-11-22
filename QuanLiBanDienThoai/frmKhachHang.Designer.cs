@@ -53,6 +53,7 @@
 			// 
 			// panel2
 			// 
+			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.panel2.CausesValidation = false;
 			this.panel2.Controls.Add(this.txtTenKhach);
 			this.panel2.Controls.Add(this.label3);
@@ -137,7 +138,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.BackColor = System.Drawing.SystemColors.Control;
+			this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
 			this.label1.Location = new System.Drawing.Point(404, 9);
@@ -148,6 +149,7 @@
 			// 
 			// panel1
 			// 
+			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.panel1.Controls.Add(this.btnDong);
 			this.panel1.Controls.Add(this.btnLuu);
 			this.panel1.Controls.Add(this.btnBoQua);
@@ -222,6 +224,7 @@
 			// 
 			// dgvKhachHang
 			// 
+			this.dgvKhachHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
 			this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dgvKhachHang.Location = new System.Drawing.Point(0, 155);

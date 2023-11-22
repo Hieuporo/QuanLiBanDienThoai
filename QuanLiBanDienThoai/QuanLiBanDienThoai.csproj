@@ -48,12 +48,6 @@
   <ItemGroup>
     <Compile Include="Classes\ConnectData.cs" />
     <Compile Include="Classes\Functions.cs" />
-    <Compile Include="frmDangNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDangNhap.Designer.cs">
-      <DependentUpon>frmDangNhap.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +65,12 @@
     </Compile>
     <Compile Include="frmKhachHang.Designer.cs">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -92,9 +92,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmDangNhap.resx">
-      <DependentUpon>frmDangNhap.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmHang.resx">
       <DependentUpon>frmHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -121,6 +121,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="bin\Debug\QuanLiBanDienThoai.exe.config" />
     <None Include="Properties\Settings.settings">
@@ -167,9 +168,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\Images\AnhNen.gif" />
+    <Content Include="bin\Debug\Images\technical-support.png" />
     <Content Include="bin\Debug\QuanLiBanDienThoai.exe" />
     <Content Include="bin\Debug\QuanLiBanDienThoai.pdb" />
     <Content Include="QLDienThoai.sql" />
+    <None Include="Resources\padlock.png" />
+    <None Include="Resources\user.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />

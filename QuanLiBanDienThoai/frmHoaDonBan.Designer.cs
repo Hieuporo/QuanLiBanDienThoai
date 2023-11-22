@@ -83,6 +83,7 @@
 			// 
 			// panel1
 			// 
+			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.panel1.Controls.Add(this.btnTimKiem);
 			this.panel1.Controls.Add(this.cboMaHDBan);
 			this.panel1.Controls.Add(this.label1);
@@ -94,7 +95,7 @@
 			// 
 			// btnTimKiem
 			// 
-			this.btnTimKiem.Location = new System.Drawing.Point(663, 12);
+			this.btnTimKiem.Location = new System.Drawing.Point(732, 17);
 			this.btnTimKiem.Name = "btnTimKiem";
 			this.btnTimKiem.Size = new System.Drawing.Size(179, 33);
 			this.btnTimKiem.TabIndex = 2;
@@ -105,7 +106,7 @@
 			// cboMaHDBan
 			// 
 			this.cboMaHDBan.FormattingEnabled = true;
-			this.cboMaHDBan.Location = new System.Drawing.Point(260, 17);
+			this.cboMaHDBan.Location = new System.Drawing.Point(301, 22);
 			this.cboMaHDBan.Name = "cboMaHDBan";
 			this.cboMaHDBan.Size = new System.Drawing.Size(289, 24);
 			this.cboMaHDBan.TabIndex = 1;
@@ -122,6 +123,7 @@
 			// 
 			// panel3
 			// 
+			this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.panel3.Controls.Add(this.groupBox1);
 			this.panel3.Controls.Add(this.label2);
 			this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -294,7 +296,7 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.BackColor = System.Drawing.SystemColors.Control;
+			this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
 			this.label2.Location = new System.Drawing.Point(417, 8);
@@ -305,6 +307,7 @@
 			// 
 			// panel2
 			// 
+			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.panel2.Controls.Add(this.groupBox2);
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel2.Location = new System.Drawing.Point(0, 215);
@@ -314,6 +317,7 @@
 			// 
 			// groupBox2
 			// 
+			this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.groupBox2.Controls.Add(this.txtThanhTien);
 			this.groupBox2.Controls.Add(this.labdsa);
 			this.groupBox2.Controls.Add(this.panel4);
@@ -372,7 +376,7 @@
 			this.btnDong.Name = "btnDong";
 			this.btnDong.Size = new System.Drawing.Size(170, 28);
 			this.btnDong.TabIndex = 29;
-			this.btnDong.Text = "Đóng";
+			this.btnDong.Text = "Thoát";
 			this.btnDong.UseVisualStyleBackColor = true;
 			this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
 			// 
@@ -435,13 +439,15 @@
 			// dgvHDBanHang
 			// 
 			this.dgvHDBanHang.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders;
+			this.dgvHDBanHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
 			this.dgvHDBanHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvHDBanHang.Location = new System.Drawing.Point(-6, 105);
 			this.dgvHDBanHang.Name = "dgvHDBanHang";
 			this.dgvHDBanHang.RowHeadersWidth = 51;
 			this.dgvHDBanHang.RowTemplate.Height = 24;
-			this.dgvHDBanHang.Size = new System.Drawing.Size(1109, 153);
+			this.dgvHDBanHang.Size = new System.Drawing.Size(1115, 153);
 			this.dgvHDBanHang.TabIndex = 22;
+			this.dgvHDBanHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHDBanHang_CellContentClick);
 			this.dgvHDBanHang.DoubleClick += new System.EventHandler(this.dgvHDBanHang_DoubleClick);
 			// 
 			// txtDonGiaBan

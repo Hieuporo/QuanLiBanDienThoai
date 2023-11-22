@@ -61,41 +61,41 @@
             this.kháchHàngToolStripMenuItem,
             this.sảnPhẩmToolStripMenuItem});
 			this.danhMụcToolStripMenuItem.Name = "danhMụcToolStripMenuItem";
-			this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+			this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(90, 26);
 			this.danhMụcToolStripMenuItem.Text = "Danh mục";
 			// 
 			// mnuHang
 			// 
 			this.mnuHang.Name = "mnuHang";
-			this.mnuHang.Size = new System.Drawing.Size(224, 26);
+			this.mnuHang.Size = new System.Drawing.Size(169, 26);
 			this.mnuHang.Text = "Hãng";
 			this.mnuHang.Click += new System.EventHandler(this.mnuHang_Click);
 			// 
 			// mnuNhanVien
 			// 
 			this.mnuNhanVien.Name = "mnuNhanVien";
-			this.mnuNhanVien.Size = new System.Drawing.Size(224, 26);
+			this.mnuNhanVien.Size = new System.Drawing.Size(169, 26);
 			this.mnuNhanVien.Text = "Nhân viên";
 			this.mnuNhanVien.Click += new System.EventHandler(this.mnuNhanVien_Click);
 			// 
 			// kháchHàngToolStripMenuItem
 			// 
 			this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-			this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+			this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
 			this.kháchHàngToolStripMenuItem.Text = "Khách hàng";
 			this.kháchHàngToolStripMenuItem.Click += new System.EventHandler(this.kháchHàngToolStripMenuItem_Click);
 			// 
 			// sảnPhẩmToolStripMenuItem
 			// 
 			this.sảnPhẩmToolStripMenuItem.Name = "sảnPhẩmToolStripMenuItem";
-			this.sảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+			this.sảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
 			this.sảnPhẩmToolStripMenuItem.Text = "Sản phẩm";
 			this.sảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.sảnPhẩmToolStripMenuItem_Click);
 			// 
 			// mnuHoaDon
 			// 
 			this.mnuHoaDon.Name = "mnuHoaDon";
-			this.mnuHoaDon.Size = new System.Drawing.Size(81, 24);
+			this.mnuHoaDon.Size = new System.Drawing.Size(81, 26);
 			this.mnuHoaDon.Text = "Hóa đơn";
 			this.mnuHoaDon.Click += new System.EventHandler(this.mnuHoaDon_Click);
 			// 
