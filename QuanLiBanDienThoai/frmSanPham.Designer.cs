@@ -39,7 +39,6 @@
 			this.label6 = new System.Windows.Forms.Label();
 			this.txtTenSanPham = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
-			this.txtAnh = new System.Windows.Forms.TextBox();
 			this.txtMaSanPham = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -52,6 +51,7 @@
 			this.btnXoa = new System.Windows.Forms.Button();
 			this.btnThem = new System.Windows.Forms.Button();
 			this.dgvSanPham = new System.Windows.Forms.DataGridView();
+			this.txtAnh = new System.Windows.Forms.TextBox();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.picAnh)).BeginInit();
 			this.panel1.SuspendLayout();
@@ -101,7 +101,7 @@
 			// 
 			// btnOpen
 			// 
-			this.btnOpen.Location = new System.Drawing.Point(579, 57);
+			this.btnOpen.Location = new System.Drawing.Point(645, 95);
 			this.btnOpen.Name = "btnOpen";
 			this.btnOpen.Size = new System.Drawing.Size(60, 31);
 			this.btnOpen.TabIndex = 18;
@@ -111,7 +111,7 @@
 			// 
 			// picAnh
 			// 
-			this.picAnh.Location = new System.Drawing.Point(785, 28);
+			this.picAnh.Location = new System.Drawing.Point(765, 35);
 			this.picAnh.Name = "picAnh";
 			this.picAnh.Size = new System.Drawing.Size(180, 175);
 			this.picAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -166,15 +166,6 @@
 			this.label3.TabIndex = 11;
 			this.label3.Text = "Tên sản phẩm";
 			// 
-			// txtAnh
-			// 
-			this.txtAnh.Location = new System.Drawing.Point(499, 110);
-			this.txtAnh.Multiline = true;
-			this.txtAnh.Name = "txtAnh";
-			this.txtAnh.Size = new System.Drawing.Size(220, 63);
-			this.txtAnh.TabIndex = 7;
-			this.txtAnh.TextChanged += new System.EventHandler(this.txtAnh_TextChanged);
-			// 
 			// txtMaSanPham
 			// 
 			this.txtMaSanPham.Location = new System.Drawing.Point(187, 64);
@@ -185,7 +176,7 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(505, 64);
+			this.label4.Location = new System.Drawing.Point(578, 101);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(30, 16);
 			this.label4.TabIndex = 4;
@@ -300,6 +291,16 @@
 			this.dgvSanPham.TabIndex = 5;
 			this.dgvSanPham.Click += new System.EventHandler(this.dgvSanPham_Click);
 			// 
+			// txtAnh
+			// 
+			this.txtAnh.Location = new System.Drawing.Point(1108, 3);
+			this.txtAnh.Multiline = true;
+			this.txtAnh.Name = "txtAnh";
+			this.txtAnh.Size = new System.Drawing.Size(10, 10);
+			this.txtAnh.TabIndex = 7;
+			this.txtAnh.Visible = false;
+			this.txtAnh.TextChanged += new System.EventHandler(this.txtAnh_TextChanged);
+			// 
 			// frmSanPham
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -325,7 +326,6 @@
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.TextBox txtTenSanPham;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.TextBox txtAnh;
 		private System.Windows.Forms.TextBox txtMaSanPham;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label2;
@@ -346,5 +346,6 @@
 		private System.Windows.Forms.PictureBox picAnh;
 		private System.Windows.Forms.ComboBox cboMaNhanHieu;
 		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.TextBox txtAnh;
 	}
 }

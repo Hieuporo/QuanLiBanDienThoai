@@ -32,7 +32,7 @@ namespace QuanLiBanDienThoai
 			dgvSanPham.Columns[1].HeaderText = "Tên hàng";
 			dgvSanPham.Columns[2].HeaderText = "Hãng";
 			dgvSanPham.Columns[3].HeaderText = "Số lượng";
-			dgvSanPham.Columns[4].HeaderText = "Đơn giá nhập";
+			dgvSanPham.Columns[4].HeaderText = "Đơn giá bán";
 			dgvSanPham.Columns[5].HeaderText = "Ảnh";
 			dgvSanPham.Columns[0].Width = 80;
 			dgvSanPham.Columns[1].Width = 140;
@@ -65,7 +65,7 @@ namespace QuanLiBanDienThoai
 			txtSoLuong.Text = "0";
 			txtDonGiaBan.Text = "0";
 			txtSoLuong.Enabled = true;
-			txtDonGiaBan.Enabled = false;
+			txtDonGiaBan.Enabled = true;
 			txtAnh.Text = "";
 			picAnh.Image = null;
 		}
@@ -170,6 +170,7 @@ namespace QuanLiBanDienThoai
 			}
 			sql = "UPDATE SanPham SET TenSP=N'" + txtTenSanPham.Text.Trim().ToString() +
 				"',MaThuongHieu=N'" + cboMaNhanHieu.SelectedValue.ToString() +
+				"',MaThuongHieu=N'" + txtDonGiaBan.Text.Trim().ToString() +
 				"',SoLuong=" + txtSoLuong.Text +
 				",Anh='" + txtAnh.Text +  "' WHERE MaSP=N'" + txtMaSanPham.Text + "'";
 			data.ChangeData(sql);
