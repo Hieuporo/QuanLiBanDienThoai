@@ -265,5 +265,10 @@ namespace QuanLiBanDienThoai
 				txtAnh.Text = dlgOpen.FileName;
 			}
 		}
+
+		private void txtAnh_TextChanged(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

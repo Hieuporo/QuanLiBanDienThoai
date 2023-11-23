@@ -173,6 +173,7 @@
 			this.txtAnh.Name = "txtAnh";
 			this.txtAnh.Size = new System.Drawing.Size(220, 63);
 			this.txtAnh.TabIndex = 7;
+			this.txtAnh.TextChanged += new System.EventHandler(this.txtAnh_TextChanged);
 			// 
 			// txtMaSanPham
 			// 
